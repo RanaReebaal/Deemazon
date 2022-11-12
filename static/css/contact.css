@@ -1,0 +1,124 @@
+/* DROWPDOWN NAVBAR */
+
+* {
+    margin: 1;
+    padding: 1px;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: monterrat, sans-serif;
+    background: #09131b;
+    color: #ffffff;
+    max-height: 100vh;
+}
+
+nav#navbar {
+    position: absolute;
+    left: 250px;
+}
+
+.header {
+    background: #660cd4;
+    position: relative;
+    max-width: 160vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    z-index: 1;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22.5px;
+}
+
+#search {
+    width: 170px;
+    height: 50px;
+    font-size: 30px;
+}
+
+.header ul {
+    list-style: none;
+}
+
+#image {
+    width: 200px;
+    height: 80px;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+}
+
+.menu-items li {
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.menu-items li:hover {
+    background-color: orangered;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu,
+.menu-right {
+    position: absolute;
+    background: #122331;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.menu-right {
+    top: 0;
+    left: 110%;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-menu {
+    top: 34px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-right:hover .menu-right {
+    left: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.section h1 {
+    font-family: "Titillium web", serif;
+    line-height: 6vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+
+/* <!-- FOTTER --> */
+
+#mainFooter {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+}
